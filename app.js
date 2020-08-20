@@ -24,9 +24,9 @@ const item =mongoose.model("item",itemSchema);
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
 app.set('view engine', 'ejs');
-app.listen(8080,function(){
-  console.log("server on port 8080 is started");
-})
+app.listen(process.env.PORT||8080, function(req, res) {
+  console.log("server started on port 8080");
+});
 app.get("/",function(req,res){
   //res.send("hello world");
   let today =date.getDate();
