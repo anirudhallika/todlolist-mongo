@@ -1,0 +1,37 @@
+
+<%- include("header") -%>
+    <div class="box" id="heading">
+      <h1 name="headline"><%=day%></h1>
+    </div>
+
+    <div class="box">
+      <% for(i=0;i<item.length;i++)
+      { %>
+        <form class="check" action="/delete" method="post">
+          <div class="item" id="dummy">
+            <input type="checkbox" name="check" id="trial" value="<%=item[i]._id%>" onChange="this.form.submit()">
+            <p id="test">
+              <%= item[i].name %>
+            </p>
+          </div>
+        </form>
+
+      <%  } %>
+      <form class="item" action="/" method="post">
+        <input type="text" name="listValue" placeholder="enter value">
+        <button type="submit" name="buttonadd" value="1">+</button>
+        <button type="submit" name="buttondiff" value="2">-</button>
+      </form>
+<!-- <button onclick="myFunction()">-</button>
+<script>
+function myFunction() {
+  var element = document.getElementById("dummy");
+  element.parentNode.removeChild(element);
+  while(item.length>0)
+  {
+    item.pop();
+  }
+}
+</script> -->
+    </div>
+<%- include("footer") -%>

@@ -1,0 +1,28 @@
+
+<%- include("header") -%>
+    <div class="box" id="heading">
+      <h1 name="headline"><%=day%></h1>
+    </div>
+
+    <div class="box">
+      <% for(i=0;i<item.length;i++)
+      { %>
+          <div class="item" id="dummy">
+            <p id="test">
+              <%= item[i].name %>
+            </p>
+          </div>
+      <%  } %>
+<!-- <button onclick="myFunction()">-</button>
+<script>
+function myFunction() {
+  var element = document.getElementById("dummy");
+  element.parentNode.removeChild(element);
+  while(item.length>0)
+  {
+    item.pop();
+  }
+}
+</script> -->
+    </div>
+<%- include("footer") -%>
