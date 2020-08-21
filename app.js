@@ -5,6 +5,7 @@ const app = express();
 const mongoose = require("mongoose");
 mongoose.connect('mongodb+srv://anirudh-admin:Test123@cluster0.aokrb.mongodb.net/Itemdb?retryWrites=true&w=majority',{ useUnifiedTopology: true,useNewUrlParser: true });
 //mongodb://localhost:27017/Itemdb
+//mongodb+srv://anirudh-admin:Test123@cluster0.aokrb.mongodb.net/Itemdb?retryWrites=true&w=majority
 const itemSchema = new mongoose.Schema({
   name:{
     type:String,
