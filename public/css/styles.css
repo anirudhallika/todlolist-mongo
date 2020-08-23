@@ -1,12 +1,12 @@
 html {
-  /* background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
-  min-height: 1000px; */
+  background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+  min-height: 1000px;
   /* background-image: url('test.jpg'); */
   font-family: 'helvetica neue';
 }
-body{
+/* body{
     background-color: #ffe0f7;
-}
+} */
 h1 {
   color: #fff;
   padding: 10px;
@@ -96,7 +96,7 @@ footer {
   color: white;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
-  background-image: url('tenor.gif');
+  /* background-image: url('tenor.gif'); */
   margin-top: 350px;
   min-height: 210px
 }
